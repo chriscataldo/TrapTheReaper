@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cataldo.chris.trapthereaper.GameActivity">
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:background="@layout/gridview_border" />
+    <TableLayout
+        android:id="@+id/scoreZone"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:stretchColumns="*"
+        android:minHeight="100dp"
+        android:baselineAligned="false"
+        android:layout_marginTop="20dp">
+        <TableRow
+            android:id="@+id/scoreZoneRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Human"
+                android:id="@+id/humanScoreLabel"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:typeface="normal"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Current Player"
+                android:id="@+id/currentPlayerLabel"
+                android:textColor="@android:color/black"
+                android:textIsSelectable="false"
+                android:gravity="center"
+                android:typeface="normal"
+                android:textStyle="normal|bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Computer"
+                android:id="@+id/computerScoreLabel"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:typeface="normal"
+                android:textStyle="normal|bold"
+                android:textSize="20sp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/scoreZoneRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:id="@+id/humanScore"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/currentPlayer"
+                android:textColor="@android:color/holo_red_dark"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:id="@+id/computerScore"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:typeface="normal"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+</GridLayout>
